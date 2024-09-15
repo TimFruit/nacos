@@ -34,7 +34,8 @@ public class Nacos {
     public static void main(String[] args) {
         // fixme 可以使用命令参数指定 启动 ， 这里为方便，直接写
         // 通过环境变量的形式 设置 单机启动
-        System.setProperty("nacos.standalone", "true"); // 或者加启动参数  -m standalone
+        // 或者加启动参数  -m standalone
+        System.setProperty("nacos.standalone", "true");
         // 通过环境变量的形式 设置 关闭权限校验
         //System.setProperty("nacos.core.auth.enabled", "false");
         SpringApplication.run(Nacos.class, args);
